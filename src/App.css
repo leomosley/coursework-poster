@@ -143,12 +143,12 @@
   background: var(--dark);
   border-radius: 1vw;
   transition: 0.3s ease-in-out;
-  z-index: 12;
+  z-index: 15;
 }
 
 .text-box.ghp {
   opacity: 0;
-  top: 0;
+  top: 13.5vh;
   left: 20vw;
 }
 
@@ -239,7 +239,7 @@
   padding: 1vw;
   background: var(--quaternary);
   border-radius: 0 1vw 0 0;
-  clip-path: polygon(3% 0%, 100% 0%, 100% 100%, 12% 100%);
+  clip-path: polygon(3% 0%, 100% 0%, 100% 100%, 11.5% 100%);
 }
 
 /* Fullscreen Message */
