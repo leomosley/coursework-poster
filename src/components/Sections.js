@@ -86,10 +86,9 @@ function Sections() {
           <div className="section-2-graph">
             <GraphOne />
           </div>
-          <p className="section-text main"></p>
-        </div>
-        <div className="section-2-content bottom">
-          <p className="section-text main"></p>
+          <p className="section-text main middle-text-2">Then I assigned an initial edge weight to represent the estimated length of each road.</p>
+          <p className="section-text main middle-text-2 full">Next I allocated a risk rating for each zone and then calculated a risk value for each road by finding the average risk rating of the zones on either side of the road.</p>
+          <p className="section-text main middle-text-2 full bottom">Now each edge has both a distance and risk value. </p>
         </div>
       </div>
     );

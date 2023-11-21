@@ -10,9 +10,9 @@ function GraphOne() {
   }, []);
 
   return (
-    <div className="graph">
-      {nodes.map((val, index) => <div key={index} className={`node ${val}`}></div>)}
-      {edges.map((val, index) => <div key={index} className={`edge ${val}`}><span className="edge-label"></span></div>)}
+    <div className="graph-1">
+      {nodes.map((val, index) => <div key={index} className={`node graph-1 ${val}`}></div>)}
+      {edges.map((val, index) => <div key={index} className={`edge graph-1 ${val}`}><span className="edge-label"></span></div>)}
     </div>
   )
 }
