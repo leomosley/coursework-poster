@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
+// Components
+import Graph from './Graph';
+
 function Sections() {
 
   const SectionOne = () => {
@@ -77,7 +80,10 @@ function Sections() {
       <div className="section-2">
         <div className="section-2-content top">
           <p className="section-text title">Assiging Edge Weights</p>
-          <p className="section-text main"></p>
+          <p className="section-text main">In order to assign an edge weight we must first convert the town into a graph where each road and intersection is represented as edges and nodes.</p>
+          <div className="section-2-graph">
+            <Graph />
+          </div>
         </div>
         <div className="section-2-content middle">
           <p className="section-text main"></p>

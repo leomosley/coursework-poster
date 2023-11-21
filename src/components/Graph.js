@@ -1,0 +1,103 @@
+import React from "react";
+
+function Graph() {
+  return (
+    <div className="graph">
+      <div className="node _0"></div>
+      <div className="node _1"></div>
+      <div className="node _2"></div>
+      <div className="node _3"></div>
+      <div className="node _4"></div>
+      <div className="node _5"></div>
+      <div className="node _6"></div>
+      <div className="node _7"></div>
+      <div className="node _8"></div>
+      <div className="node _9"></div>
+      <div className="node _10"></div>
+      <div className="node _11"></div>
+      <div className="node _12"></div>
+      <div className="node _13"></div>
+      <div className="node _14"></div>
+      <div className="node _16"></div>
+      <div className="node _15"></div>
+      <div className="node _18"></div>
+      <div className="node _17"></div>
+      <div className="node _19"></div>
+      <div className="node _20"></div>
+      <div className="node _21"></div>
+      <div className="node _22"></div>
+      <div className="node _23"></div>
+      <div className="node _24"></div>
+      <div className="node _25"></div>
+      <div className="node _26"></div>
+      <div className="node _27"></div>
+      <div className="node _28"></div>
+      <div className="node _29"></div>
+      <div className="node _30"></div>
+      <div className="node _31"></div>
+      <div className="node _32"></div>
+
+      <div className="edge _0"></div>
+      <div className="edge _1"></div>
+      <div className="edge _2"></div>
+      <div className="edge _3"></div>
+      <div className="edge _4"></div>
+      <div className="edge _5"></div>
+      <div className="edge _6"></div>
+      <div className="edge _7"></div>
+      <div className="edge _8"></div>
+      <div className="edge _9"></div>
+      <div className="edge _10"></div>
+      <div className="edge _11"></div>
+      <div className="edge _12"></div>
+      <div className="edge _13"></div>
+      <div className="edge _14"></div>
+      <div className="edge _15"></div>
+      <div className="edge _16"></div>
+      <div className="edge _17"></div>
+      <div className="edge _18"></div>
+      <div className="edge _19"></div>
+      <div className="edge _21"></div>
+      <div className="edge _22"></div>
+      <div className="edge _22"></div>
+      <div className="edge _23"></div>
+      <div className="edge _24"></div>
+      <div className="edge _25"></div>
+      <div className="edge _26"></div>
+      <div className="edge _27"></div>
+      <div className="edge _28"></div>
+      <div className="edge _29"></div>
+      <div className="edge _30"></div>
+      <div className="edge _31"></div>
+      <div className="edge _32"></div>
+      <div className="edge _33"></div>
+      <div className="edge _34"></div>
+      <div className="edge _35"></div>
+      <div className="edge _36"></div>
+      <div className="edge _37"></div>
+      <div className="edge _38"></div>
+      <div className="edge _39"></div>
+      <div className="edge _40"></div>
+      <div className="edge _41"></div>
+      <div className="edge _42"></div>
+      <div className="edge _43"></div>
+      <div className="edge _44"></div>
+      <div className="edge _45"></div>
+      <div className="edge _46"></div>
+      <div className="edge _47"></div>
+      <div className="edge _48"></div>
+      <div className="edge _49"></div>
+      <div className="edge _50"></div>
+      <div className="edge _51"></div>
+      <div className="edge _52"></div>
+      <div className="edge _53"></div>
+      <div className="edge _54"></div>
+      <div className="edge _55"></div>
+      <div className="edge _56"></div>
+      <div className="edge _57"></div>
+      <div className="edge _58"></div>
+    </div>
+  )
+}
+export default Graph;
+

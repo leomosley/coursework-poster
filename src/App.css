@@ -30,8 +30,8 @@
   position: fixed;
   right: 0;
   top: 0;
-  width: 5.7vw;
-  aspect-ratio: 1;
+  width: 5.85   vw;
+  height: 5.85vw;
   padding: 1vw; 
   background: var(--dark);
   border-radius: 0 0 0 1vw;
@@ -82,7 +82,7 @@
 .github-link {
   width: 1.5vw;
   height: 1.5vw;
-  margin-left: 5px;
+  margin-left: 0.15vw;
   cursor: pointer;
 }
 
@@ -268,4 +268,333 @@
   border: 0.1vw solid var(--background);
   border-radius: 0.3vw;
   padding: 0.2vw;
+}
+
+/* Graphs */
+.section-2-graph {
+  margin-top: 0vw;
+}
+
+.graph {
+  position: absolute;
+  width: 16vw;
+  height: 16vw;
+}
+
+.node {
+  position: absolute;
+  width: 0.8vw;
+  height: 0.8vw;
+  background: var(--background);
+  border-radius: 50%;
+  z-index: 13;
+}
+
+.node._0 {
+  bottom: 0vw;
+  left: 7.5vw;
+}
+
+.node._1 {
+  bottom: 1.5vw;
+  left: 7.5vw;
+}
+
+.node._2 {
+  bottom: 4vw;
+  left: 6.4vw;
+}
+
+.node._3 {
+  bottom: 4vw;
+  left: 7.5vw;
+}
+
+.node._4 {
+  bottom: 4vw;
+  left: 8.7vw;
+}
+
+.node._5 {
+  bottom: 1.5vw;
+  right: 2.3vw;
+}
+
+.node._6 {
+  bottom: 1.5vw;
+  left: 1vw;
+}
+
+.node._7 {
+  bottom: 1.5vw;
+  left: 0vw;
+}
+
+.node._8 {
+  bottom: 4vw;
+  left: 0vw;
+}
+
+.node._9 {
+  bottom: 4vw;
+  left: 1.8vw;
+}
+
+.node._10 {
+  bottom: 7vw;
+  left: 0vw;
+}
+
+.node._11 {
+  bottom: 7vw;
+  left: 2.5vw;
+}
+
+.node._12 {
+  bottom: 8.7vw;
+  left: 1.2vw;
+}
+
+.node._13 {
+  bottom: 10.2vw;
+  left: 0.1vw; 
+}
+
+.node._14 {
+  bottom: 10.2vw;
+  left: 2vw; 
+}
+
+.node._15 {
+  bottom: 13vw;
+  left: 3.2vw; 
+}
+
+.node._16 {
+  bottom: 10.2vw;
+  left: 4.4vw; 
+}
+
+.node._17 {
+  bottom: 7vw;
+  left: 5.3vw; 
+}
+
+.node._18 {
+  bottom: 7vw;
+  left: 7.5vw; 
+}
+
+.node._19 {
+  bottom: 10.2vw;
+  left: 7.5vw;
+}
+
+.node._20 {
+  bottom: 13.5vw;
+  left: 7.5vw;
+}
+.node._21 {
+  top: 0vw;
+  left: 7.5vw;
+}
+
+.node._22 {
+  bottom: 12.3vw;
+  left: 11.5vw;
+}
+
+.node._23 {
+  bottom: 10.2vw;
+  left: 9.1vw;
+}
+
+.node._24 {
+  bottom: 10.2vw;
+  left: 13vw;
+}
+
+.node._25 {
+  bottom: 10.2vw;
+  left: 15.2vw;
+}
+
+.node._26 {
+  bottom: 8.5vw;
+  left: 14.2vw;
+}
+
+.node._27 {
+  bottom: 7vw;
+  left: 15.2vw;
+}
+
+.node._28 {
+  bottom: 7vw;
+  left: 13.2vw;
+}
+
+.node._29 {
+  bottom: 7vw;
+  left: 10.5vw;
+}
+
+.node._30 {
+  bottom: 4vw;
+  left: 12.3vw;
+}
+
+.node._31 {
+  bottom: 4vw;
+  left: 15.2vw;
+}
+
+.node._32 {
+  bottom: 1.5vw;
+  left: 15.2vw;
+}
+
+.edge {
+  position: absolute;
+  background: var(--background)
+}
+
+.edge._0 {
+  left: 7.8vw;
+  bottom: 0.1vw;
+  height: 1.6vw;
+  width: 0.2vw;
+}
+
+.edge._2 {
+  left: 7.8vw;
+  bottom: 2vw;
+  height: 2.5vw;
+  width: 0.2vw;
+}
+
+.edge._4 {
+  left: 7.7vw;
+  bottom: 1.75vw;
+  height: 0.2vw;
+  width: 5.5vw;
+}
+
+.edge._5 {
+  left: 1.4vw;
+  bottom: 1.75vw;
+  height: 0.2vw;
+  width: 6.4vw;
+}
+
+.edge._6 {
+  left: 7vw;
+  bottom: 4.25vw;
+  height: 0.2vw;
+  width: 1vw;
+}
+
+.edge._7 {
+  left: 8vw;
+  bottom: 4.25vw;
+  height: 0.2vw;
+  width: 1vw;
+}
+
+.edge._8 {
+  left: 2vw;
+  bottom: 4.25vw;
+  height: 0.2vw;
+  width: 4.5vw;
+}
+
+.edge._10 {
+  left: 7.8vw;
+  bottom: 4.5vw;
+  height: 2.6vw;
+  width: 0.2vw;
+}
+
+.edge._12 {
+  left: 9.5vw;
+  bottom: 4.25vw;
+  height: 0.2vw;
+  width: 3vw;
+}
+
+.edge._15 {
+  left: 13.5vw;
+  bottom: 1.75vw;
+  height: 0.2vw;
+  width: 2vw;
+}
+
+.edge._16 {
+  right: 0.3vw;
+  bottom: 1.5vw;
+  height: 2.6vw;
+  width: 0.2vw;
+}
+
+.edge._17 {
+  left: 12.5vw;
+  bottom: 4.25vw;
+  height: 0.2vw;
+  width: 3vw;
+}
+
+.edge._18 {
+  right: 0.3vw;
+  bottom: 4.5vw;
+  height: 2.6vw;
+  width: 0.2vw;
+}
+
+.edge._35 {
+  left: 7.8vw;
+  bottom: 14.2vw;
+  height: 1.1vw;
+  width: 0.2vw;
+}
+
+.edge._36 {
+  left: 7.8vw;
+  bottom: 10.9vw;
+  height: 2.7svw;
+  width: 0.2vw;
+}
+
+.edge._48 {
+  left: 7.8vw;
+  bottom: 7.5vw;
+  height: 2.8svw;
+  width: 0.2vw;
+}
+
+.edge._53 {
+  left: 0.3vw;
+  bottom: 4.5vw;
+  height: 2.6vw;
+  width: 0.2vw;
+}
+
+.edge._55 {
+  left: 0.2vw;
+  bottom: 4.25vw;
+  height: 0.2vw;
+  width: 2vw;
+}
+
+.edge._56 {
+  left: 0.3vw;
+  bottom: 1.5vw;
+  height: 2.6vw;
+  width: 0.2vw;
+}
+
+.edge._58 {
+  left: 0.2vw;
+  bottom: 1.75vw;
+  height: 0.2vw;
+  width: 0.9vw;
 }
