@@ -86,9 +86,9 @@ function Sections() {
           <div className="section-2-graph">
             <GraphOne />
           </div>
-          <p className="section-text main middle-text-2">Then I assigned an initial edge weight to represent the estimated length of each road.</p>
-          <p className="section-text main middle-text-2 full">Next I allocated a risk rating for each zone and then calculated a risk value for each road by finding the average risk rating of the zones on either side of the road.</p>
-          <p className="section-text main middle-text-2 full bottom">Now each edge has both a distance and risk value. </p>
+          <p className="section-text main middle-text-2 big-text">Then I assigned an initial edge weight to represent the estimated length of each road.</p>
+          <p className="section-text main middle-text-2 full big-text">Next I allocated a <strong id="risk-rating">risk rating</strong> for each zone and then calculated a risk value for each road by finding the average risk rating of the zones on either side of the road.</p>
+          <p className="section-text main middle-text-2 full bottom big-text">Now each edge has been assinged both a distance and risk value. </p>
         </div>
       </div>
     );
@@ -98,8 +98,10 @@ function Sections() {
 
     return (
       <div className="section-3">
-        <p className="section-text title left-margin">The Algorithm</p>
-        <p className="section-text main left-margin">text</p>
+        <div className="section-3-content">
+        <p className="section-text title">The Algorithm</p>
+        <p className="section-text main"></p>
+        </div>
       </div>
     );
   }

@@ -184,7 +184,7 @@
 .section-2 {
   position: absolute;
   background: var(--secondary);
-  width: 60vw;
+  width: 55vw;
   height: 44.5vh;
   left: 1vw;
   padding: 1vw;
@@ -208,40 +208,37 @@
 
 .section-text.main.middle-text-2 {
   position: absolute;
-  left: 19vw;
+  left: 19.5vw;
   width: 40%;
 }
 
 .section-text.main.middle-text-2.full {
-  top: 12.5vw;
-  width: 62%;
+  top: 14vw;
+  width: 60%;
 }
 
 .section-text.main.middle-text-2.bottom {
-  top: 18vw;
-  width: 65%;
+  top: 19.3vw;
+  width: 60%;
 }
-
 
 /* Section 3 */
 .section-3 {
   position: absolute;
   background: var(--tertiary);
-  width: 39vw;
+  width: 45vw;
   height: 45vh;
   right: 1vw;
   padding: 1vw;
   bottom: 1vw;
   border-radius: 0 0 1vw 0;
-  clip-path: polygon(3% 0%, 100% 0%, 100% 100%, 16% 100%);
+  clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 16% 100%);
 }
 
-.section-text.title.left-margin {
-  margin-left: 3vw;
-}
-
-.section-text.main.left-margin {
-  margin-left: 3vw;
+.section-3-content {
+  position: absolute;
+  width: 37vw;
+  left: 9vw;
 }
 
 /* Section 4 */
@@ -255,6 +252,10 @@
   background: var(--quaternary);
   border-radius: 0 1vw 0 0;
   clip-path: polygon(3% 0%, 100% 0%, 100% 100%, 11.5% 100%);
+}
+
+.left-margin {
+  margin-left: 3vw;
 }
 
 /* Fullscreen Message */
