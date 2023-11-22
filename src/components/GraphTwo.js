@@ -5,8 +5,8 @@ function GraphTwo() {
   const [edges, setEdges] = useState([]);
   
   useEffect(() => {
-    setNodes([...Array(26)].map((x, i) => `_${i}`));
-    setEdges([...Array(55)].map((x, i) => `_${i}`));  
+    setNodes([...Array(26)].map((x, i) => `_0${i}`));
+    setEdges([...Array(55)].map((x, i) => `_0${i}`));  
   }, []);
 
   return (

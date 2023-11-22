@@ -3,6 +3,7 @@ import { icons } from "../constants";
 
 // Components
 import GraphOne from './GraphOne';
+import GraphTwo from "./GraphTwo";
 
 function Sections() {
 
@@ -234,6 +235,8 @@ function Sections() {
         <div className="section-4-content">
           <p className="section-text title left-margin">Paths</p>
           <p className="section-text main left-margin">texts</p>
+          <GraphOne />
+          <GraphTwo />
         </div>
       </div>
     );
