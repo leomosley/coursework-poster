@@ -30,7 +30,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  width: 5.85   vw;
+  width: 5.85vw;
   height: 5.85vw;
   padding: 1vw; 
   background: var(--dark);
@@ -251,6 +251,144 @@
   left: 8vw;
 }
 
+.section-3-title {
+  margin-left: -2vw;
+}
+
+/* Diagram */
+.flow-diagram {
+  width: 40vw;
+}
+
+.diagram-point {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5vw;
+  height: 3.5vw;
+  padding: 0.5vw;
+  background: var(--background);
+  border-radius: 50%;
+}
+
+.diagram-circle {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  left: 13vw;
+  border-radius: 50%;
+  border: 1vw solid var(--background); 
+  z-index: -2;
+}
+
+.diagram-circle-block {
+  position: absolute;
+  z-index: -1;
+  width: 11vw;
+  height: 10vw;
+  background: var(--tertiary);
+  left: -1vw;
+  top: -1vw;
+}
+
+.diagram-point._1 {
+  margin-top: -1.5vw;
+  left: 22.5vw;
+}
+
+.diagram-point._2 {
+  margin-top: 5vw;
+  left: 31.5vw;
+}
+
+.diagram-point._3 {
+  margin-top: 16.5vw;
+  left: 28.5vw;
+}
+
+.diagram-point._4 {
+  margin-top: 17vw;
+  left: 15.5vw;
+}
+
+.diagram-point._5 {
+  margin-top: 7.5vw;
+  left: 11.25vw;
+}
+
+.diagram-icon {
+  width: 95%;
+  height: 95%;
+}
+
+.diagram-icon.__2, .__5 {
+  width: 105%;
+  height: 105%;
+}
+
+.diagram-icon.__4, .__3 {
+  width: 80%;
+  height: 80%;
+}
+
+.section-text.small-title {
+  font-size: 1.2vw;
+  font-weight: 700;
+}
+
+.diagram-point-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+}
+
+.diagram-point-text._1_ {
+  width: 20vw;
+  top: -1vw;
+  left: 6vw;
+}
+
+.diagram-point-text._2_ {
+  width: 12vw;
+  left: 5vw;
+  top: -1vw;
+}
+
+.diagram-point-text._3_ {
+  width: 16vw;
+  left: 4.8vw;
+  top: -2vw;
+}
+
+.diagram-point-text._4_ {
+  width: 15vw;
+  left: -15vw;
+  top: -1vw;
+}
+
+.diagram-point-text._5_ {
+  width: 13vw;
+  left: -12vw;
+  top: -2.5vw;
+}
+
+.repeat-points {
+  position: absolute;
+  top: 14.9vw;
+  left: 15vw;
+  width: 18vw;
+  text-align: center;
+}
+
+.repeat-icon {
+  position: absolute;
+  width: 3vw;
+  top: 19.7vw;
+  left: 22.7vw;
+}
+
 /* Section 4 */
 .section-4 {
   position: absolute;
@@ -265,7 +403,8 @@
 }
 
 .section-4-content {
-
+  position: absolute;
+  left: 5vw;
 }
 
 /* Fullscreen Message */

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { icons } from "../constants";
 
 // Components
 import GraphOne from './GraphOne';
@@ -153,11 +154,74 @@ function Sections() {
 
   const SectionThree = () => {
 
+    
+
     return (
       <div className="section-3">
         <div className="section-3-content">
-        <p className="section-text title">The Algorithm</p>
-        <p className="section-text main"></p>
+          <p className="section-text title section-3-title">The Algorithm</p>
+          <div className="flow-diagram">
+            <div className="diagram-circle">
+              <div className="diagram-circle-block"></div>
+            </div>
+            <div className="diagram-point _1">
+              <img 
+                className="diagram-icon _1"
+                src={icons.start}
+              />
+              <div className="diagram-point-text _1_">
+                <span className="section-text small-title">1. Select Locations</span>
+                <span className="section-text main">Select the source node and &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  destination node</span>
+              </div>
+            </div>
+            <div className="diagram-point _2">
+              <img 
+                className="diagram-icon __2"
+                src={icons.record}
+              />
+              <div className="diagram-point-text _2_">
+                <span className="section-text small-title">2. Initialise</span>
+                <span className="section-text main">Set the value for the start node to 0 and the rest to infinity. Also mark all nodes as unvisited.</span>
+              </div>
+            </div>
+            <div className="diagram-point _3">
+              <img 
+                className="diagram-icon __3"
+                src={icons.map}
+              />
+              <div className="diagram-point-text _3_">
+                <span className="section-text small-title">&nbsp; &nbsp; &nbsp; 3. Explore</span>
+                <span className="section-text main">&nbsp; Visit the smallest unvisited &nbsp;node; update neighboring nodes if the cumulative value is smaller.</span>
+              </div>
+            </div>
+            <div className="diagram-point _4">
+              <img 
+                className="diagram-icon __4"
+                src={icons.tick}
+              />
+              <div className="diagram-point-text _4_">
+                <span className="section-text small-title">4. Mark Visited</span>
+                <span className="section-text main">Record the current node as visited so it isn't visited again.</span>
+              </div>
+            </div>
+            <div className="diagram-point _5">
+              <img 
+                className="diagram-icon __5"
+                src={icons.target}
+              />
+              <div className="diagram-point-text _5_">
+                <span className="section-text small-title">5. Output</span>
+                <span className="section-text main">The output is the &nbsp; best path; shortest, &nbsp;  &nbsp;safest, or balanced; &nbsp;  &nbsp;depending on the &nbsp; &nbsp;chosen weights.</span>
+              </div>
+            </div>
+            <div className="repeat-points">
+              <span className="section-text main">Repeat 3 and 4 until destination &nbsp; node is reached or all nodes are visited.</span>
+            </div>
+            <img 
+              className="repeat-icon"
+              src={icons.repeat}
+            />
+          </div>
         </div>
       </div>
     );
@@ -167,8 +231,10 @@ function Sections() {
 
     return (
       <div className="section-4">
-        <p className="section-text title left-margin">Paths</p>
-        <p className="section-text main left-margin">texts</p>
+        <div className="section-4-content">
+          <p className="section-text title left-margin">Paths</p>
+          <p className="section-text main left-margin">texts</p>
+        </div>
       </div>
     );
   }
