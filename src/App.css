@@ -48,7 +48,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  width: 89.2vw;
+  width: 89vw;
   height: 5.85vw;
   padding: 1vw;
   background: var(--primary);
@@ -113,7 +113,7 @@
   padding: 1vw;
   top: 16vh;
   border-radius: 1vw 0 0 0;
-  clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 91% 0%, 100% 100%, 0% 100%);
 }
 
 .section-text {
@@ -130,11 +130,7 @@
 .section-text.main {
   font-size: 1.1vw;
   margin-bottom: 0.5vw;
-  width: 90%;
-}
-
-.section-text.main.bottom {
-  width: 80%;
+  width: 95%;
 }
 
 .text-box {
@@ -184,7 +180,7 @@
 .section-2 {
   position: absolute;
   background: var(--secondary);
-  width: 55vw;
+  width: 45.3vw;
   height: 44.5vh;
   left: 1vw;
   padding: 1vw;
@@ -198,7 +194,7 @@
 }
 
 .section-2-content.top {
-  width: 68%;
+  width: 95%;
 }
 
 .section-2-content.middle {
@@ -208,37 +204,51 @@
 
 .section-text.main.middle-text-2 {
   position: absolute;
-  left: 19.5vw;
-  width: 40%;
+  left: 20vw;
+  width: 50%;
 }
 
-.section-text.main.middle-text-2.full {
+.section-text.main.middle-text-2.mid {
   top: 14vw;
-  width: 60%;
 }
 
 .section-text.main.middle-text-2.bottom {
-  top: 19.3vw;
-  width: 60%;
+  top: 21vw;
+}
+
+.section-2-graph {
+  margin-top: 1vw;
+  margin-left: 0.5vw;
+}
+
+.text-box.risk-rating {
+  top: 53.5vh;
+  left: 28vw;
+  height: 18vh;
+  opacity: 0;
+}
+
+.text-box.text-box.risk-rating.active {
+  opacity: 100;
 }
 
 /* Section 3 */
 .section-3 {
   position: absolute;
   background: var(--tertiary);
-  width: 45vw;
-  height: 45vh;
+  width: 55vw;
+  height: 44.5vh;
   right: 1vw;
   padding: 1vw;
   bottom: 1vw;
   border-radius: 0 0 1vw 0;
-  clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 16% 100%);
+  clip-path: polygon(7% 0%, 100% 0%, 100% 100%, 14% 100%);
 }
 
 .section-3-content {
   position: absolute;
   width: 37vw;
-  left: 9vw;
+  left: 8vw;
 }
 
 /* Section 4 */
@@ -251,11 +261,11 @@
   padding: 1vw;
   background: var(--quaternary);
   border-radius: 0 1vw 0 0;
-  clip-path: polygon(3% 0%, 100% 0%, 100% 100%, 11.5% 100%);
+  clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 11.5% 100%);
 }
 
-.left-margin {
-  margin-left: 3vw;
+.section-4-content {
+
 }
 
 /* Fullscreen Message */
@@ -317,19 +327,12 @@
 }
 
 /* GraphOne */
-.section-2-graph {
-  margin-top: 1vw;
-  margin-left: 0.5vw;
-}
 
 .graph-1 {
   position: absolute;
   width: 16vw;
   height: 16vw;
-}
-
-.graph-1 {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .node {

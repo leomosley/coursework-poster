@@ -56,7 +56,7 @@ function App() {
     <Header />
     <Link />
     <div className="wrapper">
-      <Centre />
+      {/* <Centre /> */}
       <Sections />
       <FullscreenPopup />
     </div>

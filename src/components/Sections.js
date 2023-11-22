@@ -68,15 +68,71 @@ function Sections() {
         <p className="section-text title">Selecting an Ethical Framework</p>
         <p className="section-text main"><b>Utilitarianism</b> is my chosen ethical framework for measuring risk - its fundamental principle is providing the most utility to the largest number of people. </p>
         <p className="section-text main">In this scenario largest number of people are pedestrians and the passengers of other vehicles. Following the <strong id="ghp-text">Greatest Happiness Principle</strong>, they are who should be provided the most utility.</p>
-        <p className="section-text main bottom">Within this context utility can be defined as minimising negative impacts - in order to do so areas of high risk should be avoided.</p>
+        <p className="section-text main">Within this context utility can be defined as minimising negative impacts - in order to do so areas of high risk should be avoided.</p>
       </div>
       </>
     );
   }
 
   const SectionTwo = () => {
+    const [active, setActive] = useState(false);
+    const [hovered, setHovered] = useState(false);
+
+    useEffect(() => {
+      const handleHover = () => {
+        setHovered(true);
+        setActive(true);
+      }
+      document.getElementById("risk-rating").addEventListener("mouseenter", handleHover);
+      return () => {
+        document.getElementById("risk-rating").addEventListener("mouseenter", handleHover);
+      };
+    }, []);
+
+    useEffect(() => {
+      const handleHover = () => {
+        setHovered(false);
+        if (document.querySelector(".text-box.risk-rating:hover")) {
+          setActive(true);
+        } else {
+          setActive(false);
+        }
+      }
+      document.getElementById("risk-rating").addEventListener("mouseleave", handleHover);
+      return () => {
+        document.getElementById("risk-rating").removeEventListener("mouseleave", handleHover);
+      };
+    }, []);
+    
+    useEffect(() => {
+      const handleHover = () => {
+        if (hovered) {
+          setActive(true);
+        }
+      }
+      document.getElementById("risk-rating-text-box").addEventListener("mouseenter", handleHover);
+      return () => {
+        document.getElementById("risk-rating").removeEventListener("mouseenter", handleHover);
+      };
+    }, []);
+
+    useEffect(() => {
+      const handleHover = () => {
+        if (!hovered) {
+          setActive(false);
+        }
+      }
+      document.getElementById("risk-rating-text-box").addEventListener("mouseleave", handleHover);
+      return () => {
+        document.getElementById("risk-rating-text-box").removeEventListener("mouseleave", handleHover);
+      };
+    }, []);
 
     return (
+      <>
+      <div id="risk-rating-text-box" className={`text-box risk-rating ${active? "active" : ""}`}>
+        <p className="section-text main tb"></p>
+      </div>
       <div className="section-2">
         <div className="section-2-content top">
           <p className="section-text title">Assiging Edge Weights</p>
@@ -86,11 +142,12 @@ function Sections() {
           <div className="section-2-graph">
             <GraphOne />
           </div>
-          <p className="section-text main middle-text-2 big-text">Then I assigned an initial edge weight to represent the estimated length of each road.</p>
-          <p className="section-text main middle-text-2 full big-text">Next I allocated a <strong id="risk-rating">risk rating</strong> for each zone and then calculated a risk value for each road by finding the average risk rating of the zones on either side of the road.</p>
-          <p className="section-text main middle-text-2 full bottom big-text">Now each edge has been assinged both a distance and risk value. </p>
+          <p className="section-text main middle-text-2">Then I assigned an initial edge weight to represent the estimated length of each road.</p>
+          <p className="section-text main middle-text-2 mid">Next I allocated a <strong id="risk-rating">risk rating</strong> for each zone and then calculated a risk value for each road by finding the average risk rating of the zones on either side of the road.</p>
+          <p className="section-text main middle-text-2 bottom">Now each edge has been assinged both a distance and risk value. </p>
         </div>
       </div>
+      </>
     );
   }
 

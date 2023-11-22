@@ -1,4 +1,4 @@
-import courseworkPosterLink from "../assets/images/courseworkPosterLink.svg";
+import courseworkPosterLink from "../assets/images/qr-code.svg";
 
 export default {
   courseworkPosterLink
