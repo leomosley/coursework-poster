@@ -5,14 +5,14 @@ function GraphTwo() {
   const [edges, setEdges] = useState([]);
   
   useEffect(() => {
-    setNodes([...Array(26)].map((x, i) => `_0${i}`));
+    setNodes([...Array(27)].map((x, i) => `_0${i}`));
     setEdges([...Array(55)].map((x, i) => `_0${i}`));  
   }, []);
 
   return (
-    <div className="graph-1">
+    <div className="graph-2">
       {nodes.map((val, index) => <div key={index} className={`node graph-2 ${val}`}></div>)}
-      {edges.map((val, index) => <div key={index} className={`edge graph-2 ${val}`}><span className="edge-label"></span></div>)}
+      {edges.map((val, index) => <div key={index} className={`edge graph-2 ${val}`}><span className={`edge-label ${val}_`}>{val}</span></div>)}
     </div>
   )
 }

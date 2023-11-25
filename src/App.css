@@ -7,9 +7,8 @@
   --background: #e4f0fb;
   --primary: #2b719a;
   --secondary: #407ea5;
-  --tertiary: #4c87ab;
-  --quaternary: #5e95b7;
-  --quinary: #75a3c0;
+  --tertiary: #5e95b7;
+  --quaternary: #75a3c0;
 }
 
 .wrapper {
@@ -27,7 +26,7 @@
 
 /* Link */
 .link {
-  position: fixed;
+  position: absolute;
   right: 0;
   top: 0;
   width: 5.85vw;
@@ -218,7 +217,7 @@
 
 .section-2-graph {
   margin-top: 1vw;
-  margin-left: 0.5vw;
+  margin-left: 1vw;
 }
 
 .text-box.risk-rating {
@@ -231,6 +230,37 @@
 .text-box.text-box.risk-rating.active {
   opacity: 100;
 }
+
+.green {
+ background: #67B486;
+}
+
+.red {
+ background: #D94342;
+}
+
+.blue {
+  background: #485896;
+}
+
+.graph-background-1 {
+  position: absolute;
+  width: 3vw;
+  height: 2.6vw;
+  left: 15.2vw;
+  top: 21.6vw;
+  z-index: -1;
+}
+
+.graph-background-2 {
+  position: absolute;
+  width: 6vw;
+  height: 2.6vw;
+  left: 10vw;
+  top: 21.6vw;
+  z-index: -1;
+}
+
 
 /* Section 3 */
 .section-3 {
@@ -407,6 +437,20 @@
   left: 5vw;
 }
 
+.section-4-graph-1 {
+  position: absolute;
+  top: 1vw;
+  left: 10vw;
+  transform: scale(0.9);
+}
+
+.section-4-graph-2 {
+  position: absolute;
+  top: 1vw;
+  left: 30vw;
+  transform: scale(0.9);
+}
+
 /* Fullscreen Message */
 .fullscreen-message {
   position: fixed;
@@ -466,8 +510,14 @@
 }
 
 /* GraphOne */
-
 .graph-1 {
+  position: absolute;
+  width: 16vw;
+  height: 16vw;
+  transform: scale(1.08);
+}
+
+.graph-2 {
   position: absolute;
   width: 16vw;
   height: 16vw;
@@ -958,10 +1008,10 @@
 }
 
 .edge.graph-1._41 {
-  left: 0.2vw;
+  left: 2.5vw;
   bottom: 10.5vw;
   height: 0.2vw;
-  width: 2.4vw;
+  width: 2vw;
 }
 
 .edge.graph-1._42 {
@@ -973,10 +1023,10 @@
 }
 
 .edge.graph-1._43 {
-  left: 2.5vw;
+  left: 0.2vw;
   bottom: 10.5vw;
   height: 0.2vw;
-  width: 2vw;
+  width: 2.4vw;
 }
 
 .edge.graph-1._44 {
@@ -1090,4 +1140,479 @@
   bottom: 1.75vw;
   height: 0.2vw;
   width: 0.9vw;
+}
+
+.edge-label {
+  position: absolute;
+  font-family: var(--font);
+  color: var(--background);
+  font-size: 0.75vw;
+}
+
+.edge-label.__0_ {
+  left: 0.5vw;
+}
+
+.edge-label.__1_ {
+  left: -1vw;
+  top: 0.4vw;
+  transform: rotate(24deg);
+}
+
+.edge-label.__2_ {
+  left: 0.1vw;
+  top: 0.25vw;
+  transform: scale(0.4);
+}
+
+.edge-label.__3_ {
+  left: 0.5vw;
+  top: 0.4vw;
+  transform: rotate(-24deg);
+}
+
+.edge-label.__4_ {
+  top: 0.2vw;
+  left: 2.25vw;
+}
+
+.edge-label.__5_ {
+  top: 0.2vw;
+  left: 2.25vw;
+}
+
+.edge-label.__6_ {
+  transform: scale(0.2);
+  top: -0.2vw;
+  left: -0.05vw;
+}
+
+.edge-label.__7_ {
+  transform: scale(0.2);
+  top: -0.2vw;
+  left: -0.05vw;
+}
+
+.edge-label.__8_ {
+  top: 0.2vw;
+  left: 2vw;
+}
+
+.edge-label.__9_ {
+  top: 0.6vw;
+  left: -1vw;
+  transform: rotate(20deg);
+}
+
+.edge-label.__10_ {
+  top: 0.6vw;
+  left: 0.4vw;
+}
+
+.edge-label.__11_ {
+  top: 0.8vw;
+  left: 0.4vw;
+  transform: rotate(-30deg);
+}
+
+.edge-label.__12_ {
+  top: 0.2vw;
+  left: 0.6vw;
+}
+
+.edge-label.__13_ {
+  top: 1vw;
+  left: 0.3vw;
+  transform: rotate(30deg) scale(0.8);
+}
+
+.edge-label.__14_ {
+  top: 1vw;
+  left: 0.3vw;
+  transform: rotate(13deg) scale(0.8);
+}
+
+.edge-label.__15_ {
+  top: 0.2vw;
+  left: 0.4vw;
+}
+
+.edge-label.__16_ {
+  top: 0.5vw;
+  left: 0.4vw;
+}
+
+.edge-label.__17_ {
+  left: 1vw;
+  transform: scale(0.8);
+}
+
+.edge-label.__18_ {
+  top: 0.5vw;
+  left: 0.4vw;
+}
+
+.edge-label.__19_ {
+  top: 0.8vw;
+  left: 0.4vw;
+  transform: rotate(-18deg);
+}
+
+.edge-label.__20_ {
+  top: 0.2vw;
+  left: 0.4vw;
+}
+
+.edge-label.__21_ {
+  left: -1vw;
+  transform: rotate(-32deg);
+}
+
+.edge-label.__22_ {
+  top: 0.1vw;
+  left: 0.5vw;
+  transform: rotate(34deg);
+}
+
+.edge-label.__23_ {
+  left: 1vw;
+  transform: scale(0.8);
+}
+
+.edge-label.__24_ {
+  top: 0.2vw;
+  left: 0.7vw;
+}
+
+.edge-label.__25_ {
+  top: 0.2vw;
+  left: 0.3vw;
+}
+
+.edge-label.__26_ {
+  left: 0.6vw;
+  top: 1.4vw;
+  transform: rotate(26deg);
+}
+
+.edge-label.__27_ {
+  left: -1.1vw;
+  transform: rotate(30deg);
+}
+
+.edge-label.__28_ {
+  left: 0.3vw;
+  transform: rotate(-28deg);
+}
+
+.edge-label.__29_ {
+  left: 0.5vw;
+  transform: scale(0.8);
+}
+
+.edge-label.__30_ {
+  left: 0.4vw;
+  top: 1.2vw;
+  transform: rotate(59deg);
+}
+
+.edge-label.__31_ {
+  left: -1vw;
+  transform: rotate(35deg);
+}
+
+.edge-label.__32_ {
+  top: 0.1vw;
+  left: 1.2vw;
+}
+
+.edge-label.__33_ {
+  left: 0.4vw;
+  top: 1.2vw;
+  transform: rotate(72deg);
+}
+
+.edge-label.__34_ {
+  left: 0.4vw;
+  top: 1.2vw;
+  transform: rotate(22deg);
+}
+
+.edge-label.__35_ {
+  top: 0.2vw;
+  left: 0.3vw;
+}
+
+.edge-label.__36_ {
+  left: 0.1vw;
+  top: 1.5vw;
+  transform: scale(0.6);
+}
+
+.edge-label.__37_ {
+  left: 0.45vw;
+  transform: scale(0.8);
+}
+
+.edge-label.__38_ {
+  left: 1vw;
+  transform: scale(0.8);
+}
+
+.edge-label.__39_ {
+  left: -1vw;
+  top: 1vw;
+  transform: rotate(-85deg);
+}
+
+.edge-label.__40_ {
+  left: 0.5vw;
+  top: 1vw;
+  transform: rotate(24deg);
+}
+
+.edge-label.__41_ {
+  top: 0.1vw;
+  left: 0.5vw;
+}
+
+.edge-label.__42_ {
+  left: -1.2vw;
+  top: 0.7vw;
+  transform: rotate(-24deg);
+}
+
+.edge-label.__42_ {
+  left: -1.2vw;
+  top: 0.7vw;
+  transform: rotate(-24deg);
+}
+
+.edge-label.__43_ {
+  left: 0.7vw;
+  top: -1.1vw;
+}
+
+.edge-label.__44_ {
+  left: -1.2vw;
+  top: -0.1vw;
+  transform: rotate(35deg);
+}
+
+.edge-label.__45_ {
+  left: 0.3vw;
+  top: 0.1vw;
+  transform: scale(0.8) rotate(-30deg);
+}
+
+.edge-label.__46_ {
+  left: 0.2vw;
+  top: 1.1vw;
+  transform: rotate(-30deg);
+}
+
+.edge-label.__47_ {
+  left: 0.5vw;
+  top: 1.2vw;
+  transform: rotate(16deg);
+}
+
+.edge-label.__48_ {
+  left: 0.5vw;
+  top: 0.8vw;
+}
+
+.edge-label.__49_ {
+  top: 0.2vw;
+  left: -1.1vw;
+  transform: rotate(35deg);
+}
+
+.edge-label.__50_ {
+  top: 0.4vw;
+  left: -1.1vw;
+  transform: rotate(-35deg);
+}
+
+.edge-label.__51_ {
+  top: 0.2vw;
+  left: 1vw;
+}
+
+.edge-label.__52_ {
+  top: 0.2vw;
+  left: 1.1vw;
+}
+
+.edge-label.__53_ {
+  left: 0.3vw;
+  top: 0.6vw;
+}
+
+.edge-label.__54_ {
+  left: 0.3vw;
+  top: 0.9vw;
+  transform: rotate(-15deg);
+}
+
+.edge-label.__55_ {
+  left: -1vw;
+  top: 0.9vw;
+}
+
+.edge-label.__56_ {
+  top: 0.2vw;
+  left: 0.4vw;
+}
+
+.edge-label.__57_ {
+  left: 0.4vw;
+  top: 0.5vw;
+  transform: rotate(-20deg);
+}
+
+.edge-label.__58_ {
+  top: 0.3vw;
+  left: 0.2vw;
+}
+
+
+/* GraphTwo */
+.edge.graph-2 {
+  width: 0.1vw;
+}
+
+.node.graph-2._00 {
+  top: 14.75vw;
+  left: 4.5vw;
+}
+
+.node.graph-2._01 {
+  top: 8.5vw;
+  left: 1vw;
+}
+
+.node.graph-2._02 {
+  top: 10.5vw;
+  left: 4.5vw;
+}
+
+.node.graph-2._03 {
+  top: 11.75vw;
+  left: 7vw;
+}
+
+.node.graph-2._04 {
+  top: 13.5vw;
+  left: 10.5vw;
+}
+
+.node.graph-2._05 {
+  top: 15.25vw;
+  left: 11.25vw;
+}
+
+.node.graph-2._06 {
+  top: 9vw;
+  left: 4.75vw;
+}
+
+.node.graph-2._07 {
+  top: 9.5vw;
+  left: 8.75vw;
+}
+
+.node.graph-2._08 {
+  top: 15vw;
+  left: 13.5vw;
+}
+
+.node.graph-2._09 {
+  top: 6vw;
+  left: 5.5vw;
+}
+
+.node.graph-2._010 {
+  top: 2vw;
+  left: 5.7vw;
+}
+
+.node.graph-2._011 {
+  top: 5.2vw;
+  left: 7.25vw;
+}
+
+.node.graph-2._012 {
+  top: 7vw;
+  left: 11vw;
+}
+
+.node.graph-2._013 {
+  top: 8.5vw;
+  left: 11.6vw;
+}
+
+.node.graph-2._014 {
+  top: 10.25vw;
+  left: 11.8vw;
+}
+
+.node.graph-2._015 {
+  top: 1.25vw;
+  left: 10vw;
+}
+
+.node.graph-2._016 {
+  top: 4.25vw;
+  left: 10.25vw;
+}
+
+.node.graph-2._017 {
+  top: 3.9vw;
+  left: 11.5vw;
+}
+
+.node.graph-2._018 {
+  top: 5.75vw;
+  left: 12.75vw;
+}
+
+.node.graph-2._019 {
+  top: 10.75vw;
+  left: 14vw;
+}
+
+.node.graph-2._020 {
+  top: 7.75vw;
+  left: 14.25vw;
+}
+
+.node.graph-2._021 {
+  top: 11.25vw;
+  left: 17vw;
+}
+
+.node.graph-2._022 {
+  top: 14vw;
+  left: 18vw;
+}
+
+.node.graph-2._023 {
+  top: 2vw;
+  left: 14vw;
+}
+
+.node.graph-2._024 {
+  top: 2.75vw;
+  left: 15.5vw;
+}
+
+.node.graph-2._025 {
+  top: 6vw;
+  left: 19.5vw;
+}
+
+.node.graph-2._026 {
+  top: 1.25vw;
+  left: 16vw;
 }

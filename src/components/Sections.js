@@ -143,6 +143,36 @@ function Sections() {
         <div className="section-2-content middle">
           <div className="section-2-graph">
             <GraphOne />
+            <div className="graph-background-1 green"></div>
+            <div className="graph-background-2 green"></div>
+            <div className="graph-background-3 red"></div>
+            <div className="graph-background-4 red"></div>
+            <div className="graph-background-5 green"></div>
+            <div className="graph-background-6 green"></div>
+            
+            <div className="graph-background-7 green"></div>
+            <div className="graph-background-8 blue"></div>
+            <div className="graph-background-9 blue"></div>
+            <div className="graph-background-10 red"></div>
+            <div className="graph-background-11 red"></div>
+            <div className="graph-background-12 blue"></div>
+            <div className="graph-background-13 green"></div>
+
+            <div className="graph-background-14 green"></div>
+            <div className="graph-background-15 green"></div>
+            <div className="graph-background-16 blue"></div>
+            <div className="graph-background-17 red"></div>
+            <div className="graph-background-18 red"></div>
+            <div className="graph-background-19 blue"></div>
+            <div className="graph-background-20 blue"></div>
+            <div className="graph-background-21 green"></div>
+            <div className="graph-background-22 green"></div>
+
+            <div className="graph-background-23 green"></div>
+            <div className="graph-background-24 blue"></div>
+            <div className="graph-background-25 red"></div>
+            <div className="graph-background-26 red"></div>
+            <div className="graph-background-27 blue"></div>
           </div>
           <p className="section-text main middle-text-2">Then I assigned an initial edge weight to represent the estimated length of each road.</p>
           <p className="section-text main middle-text-2 mid">Next I allocated a <strong id="risk-rating">risk rating</strong> for each zone and then calculated a risk value for each road by finding the average risk rating of the zones on either side of the road.</p>
@@ -235,8 +265,12 @@ function Sections() {
         <div className="section-4-content">
           <p className="section-text title left-margin">Paths</p>
           <p className="section-text main left-margin">texts</p>
-          <GraphOne />
-          <GraphTwo />
+          <div className="section-4-graph-1">
+            <GraphOne />
+          </div>
+          <div className="section-4-graph-2">
+            <GraphTwo />
+          </div>
         </div>
       </div>
     );
