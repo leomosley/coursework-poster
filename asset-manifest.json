@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.86b75720.css",
-    "main.js": "/static/js/main.1b6b538e.js",
-    "static/js/787.b8813487.chunk.js": "/static/js/787.b8813487.chunk.js",
-    "static/media/qr-code.svg": "/static/media/qr-code.2f470a68a0f402416964e334af33c4e7.svg",
-    "static/media/map-svgrepo-com.svg": "/static/media/map-svgrepo-com.6db420690e0c125cda93e8d270d134c3.svg",
-    "static/media/target-svgrepo-com.svg": "/static/media/target-svgrepo-com.258d039cbdbc5208cf389cc4642acb21.svg",
-    "static/media/path-location-svgrepo-com.svg": "/static/media/path-location-svgrepo-com.026ced04edb159cd812e364c818a79c6.svg",
-    "static/media/repeat-play-svgrepo-com.svg": "/static/media/repeat-play-svgrepo-com.ea4bfc5efb6125c34bb235874c602b91.svg",
-    "static/media/tick-checkbox-svgrepo-com.svg": "/static/media/tick-checkbox-svgrepo-com.59bcc5d85e92accb22e0fb079d20caf3.svg",
-    "static/media/github-mark-white.svg": "/static/media/github-mark-white.1ede47e4acf853089d828b033e114a66.svg",
-    "static/media/data-svgrepo-com.svg": "/static/media/data-svgrepo-com.594a6d36700c228f94e862aad17a214a.svg",
-    "static/media/rotate-svgrepo-com.svg": "/static/media/rotate-svgrepo-com.db4adf685625c07b02735e29c69b0353.svg",
-    "index.html": "/index.html",
-    "main.86b75720.css.map": "/static/css/main.86b75720.css.map",
-    "main.1b6b538e.js.map": "/static/js/main.1b6b538e.js.map",
-    "787.b8813487.chunk.js.map": "/static/js/787.b8813487.chunk.js.map"
+    "main.css": "/coursework-poster/static/css/main.86b75720.css",
+    "main.js": "/coursework-poster/static/js/main.c9a24519.js",
+    "static/js/787.b8813487.chunk.js": "/coursework-poster/static/js/787.b8813487.chunk.js",
+    "static/media/qr-code.svg": "/coursework-poster/static/media/qr-code.2f470a68a0f402416964e334af33c4e7.svg",
+    "static/media/map-svgrepo-com.svg": "/coursework-poster/static/media/map-svgrepo-com.6db420690e0c125cda93e8d270d134c3.svg",
+    "static/media/target-svgrepo-com.svg": "/coursework-poster/static/media/target-svgrepo-com.258d039cbdbc5208cf389cc4642acb21.svg",
+    "static/media/path-location-svgrepo-com.svg": "/coursework-poster/static/media/path-location-svgrepo-com.026ced04edb159cd812e364c818a79c6.svg",
+    "static/media/repeat-play-svgrepo-com.svg": "/coursework-poster/static/media/repeat-play-svgrepo-com.ea4bfc5efb6125c34bb235874c602b91.svg",
+    "static/media/tick-checkbox-svgrepo-com.svg": "/coursework-poster/static/media/tick-checkbox-svgrepo-com.59bcc5d85e92accb22e0fb079d20caf3.svg",
+    "static/media/github-mark-white.svg": "/coursework-poster/static/media/github-mark-white.1ede47e4acf853089d828b033e114a66.svg",
+    "static/media/data-svgrepo-com.svg": "/coursework-poster/static/media/data-svgrepo-com.594a6d36700c228f94e862aad17a214a.svg",
+    "static/media/rotate-svgrepo-com.svg": "/coursework-poster/static/media/rotate-svgrepo-com.db4adf685625c07b02735e29c69b0353.svg",
+    "index.html": "/coursework-poster/index.html",
+    "main.86b75720.css.map": "/coursework-poster/static/css/main.86b75720.css.map",
+    "main.c9a24519.js.map": "/coursework-poster/static/js/main.c9a24519.js.map",
+    "787.b8813487.chunk.js.map": "/coursework-poster/static/js/787.b8813487.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.86b75720.css",
-    "static/js/main.1b6b538e.js"
+    "static/js/main.c9a24519.js"
   ]
 }
