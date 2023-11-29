@@ -3,11 +3,21 @@ import React, { useEffect, useState } from "react";
 function GraphOne({ selectedWeights }) {
   const [nodes, setNodes] = useState([]);
   const [edges, setEdges] = useState([]);
+  const [change, setChange] = useState(true)
   
   useEffect(() => {
     setNodes([...Array(33)].map((x, i) => `_${i}`));
     setEdges([...Array(59)].map((x, i) => `_${i}`));  
   }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setChange(prev => !prev)
+    }, 500)
+    setTimeout(() => {
+      setChange(prev => !prev)
+    }, 1000)
+  }, [selectedWeights])
 
  const distances = [
     3,
@@ -135,7 +145,7 @@ function GraphOne({ selectedWeights }) {
   return (
     <div className="graph-1">
       {nodes.map((val, index) => <div key={index} className={`node graph-1 ${val}`}></div>)}
-      {edges.map((val, index) => <div key={index} className={`edge graph-1 ${val}`}><span className={`edge-label _${val}_`}>{selectedWeights? risk[Number(val.slice(1,val.length))] : distances[Number(val.slice(1,val.length))]}</span></div>)}
+      {edges.map((val, index) => <div key={index} className={`edge graph-1 ${val}`}><span className={`edge-label _${val}_ ${change? "" : "change"}`}>{selectedWeights? risk[Number(val.slice(1,val.length))] : distances[Number(val.slice(1,val.length))]}</span></div>)}
     </div>
   )
 }
