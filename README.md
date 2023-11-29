@@ -1,1 +1,1 @@
-# Core Computing Concepts Coursework 1 - Development
+# Core Computing Concepts Coursework 1
