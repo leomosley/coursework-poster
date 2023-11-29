@@ -13,6 +13,7 @@ import { icons } from "./constants";
 
 function App() {
   const [orientation, setOrientation] = useState(true);
+  console.log(test);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
