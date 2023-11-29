@@ -2409,3 +2409,16 @@
 .bold {
   font-weight: 700;
 }
+
+.graph-backgrounds {
+  will-change: opacity;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.graph-backgrounds.hide {
+  opacity: 0;
+}
+
+.edge-label {
+  transition: 0.5s ease-in-out;
+}
