@@ -134,21 +134,16 @@ function Sections() {
     }, []);
 
     useEffect(() => {
-      let showInterval;
-      let labelInterval;
+      let interval;
   
       const cycleShown = () => {
         setHide(prev => !prev);
-      };
-
-      const cycleLabelShown = () => {
         setSelectedWeights(prev => !prev);
-      }
+      };
   
-      labelInterval = setInterval(cycleLabelShown, 5500);
-      showInterval = setInterval(cycleShown, 6000);
-
-      return () => clearInterval(labelInterval, showInterval);
+      interval = setInterval(cycleShown, 6000);
+  
+      return () => clearInterval(interval);
     }, []);
 
     return (
