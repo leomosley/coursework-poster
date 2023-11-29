@@ -4,6 +4,7 @@ import { icons } from "../constants";
 // Components
 import GraphOne from './GraphOne';
 import GraphTwo from "./GraphTwo";
+import GraphOneAnimated from './GraphOneAnimated';
 
 function Sections() {
 
@@ -79,6 +80,7 @@ function Sections() {
   const SectionTwo = () => {
     const [active, setActive] = useState(false);
     const [hovered, setHovered] = useState(false);
+    const [zoomed, setZoomed] = useState(false);
 
     useEffect(() => {
       const handleHover = () => {
@@ -133,7 +135,11 @@ function Sections() {
     return (
       <>
       <div id="risk-rating-text-box" className={`text-box risk-rating ${active? "active" : ""}`}>
-        <p className="section-text main tb"></p>
+        <div className="risk-ratings">
+          <div className="risk-rating-background green"><span className="section-text title risk-rating-tb">2</span></div>
+          <div className="risk-rating-background blue"><span className="section-text title risk-rating-tb">3</span></div>
+          <div className="risk-rating-background red"><span className="section-text title risk-rating-tb">4</span></div>
+        </div>
       </div>
       <div className="section-2">
         <div className="section-2-content top">
@@ -141,7 +147,7 @@ function Sections() {
           <p className="section-text main">In order to assign an edge weight we must first convert the town into a graph where each road and intersection is represented as edges and nodes.</p>
         </div>
         <div className="section-2-content middle">
-          <div className="section-2-graph">
+          <div className={`section-2-graph ${zoomed? "zoomed" : ""}`} onClick={() => setZoomed(prev => !prev)}>
             <GraphOne />
             <div className="graph-background-1 green"></div>
             <div className="graph-background-2 green"></div>
@@ -161,6 +167,7 @@ function Sections() {
             <div className="graph-background-14 green"></div>
             <div className="graph-background-15 green"></div>
             <div className="graph-background-16 blue"></div>
+            <div className="graph-background-165 blue"></div>
             <div className="graph-background-17 red"></div>
             <div className="graph-background-18 red"></div>
             <div className="graph-background-19 blue"></div>
@@ -170,8 +177,10 @@ function Sections() {
 
             <div className="graph-background-23 green"></div>
             <div className="graph-background-24 blue"></div>
+            <div className="graph-background-245 blue"></div>
             <div className="graph-background-25 red"></div>
             <div className="graph-background-26 red"></div>
+            <div className="graph-background-265 red"></div>
             <div className="graph-background-27 blue"></div>
           </div>
           <p className="section-text main middle-text-2">Then I assigned an initial edge weight to represent the estimated length of each road.</p>
@@ -259,22 +268,71 @@ function Sections() {
   }
 
   const SectionFour = () => {
-
+    const [selectedPath, setSelectedPath] = useState(0);
+    const [previousPath, setPreviousPath] = useState(0);
+    const [delay, setDelay] = useState(5500)
+    const [interrupt, setInterrupt] = useState(false);
+  
+    useEffect(() => {
+      let interval;
+  
+      const cyclePaths = () => {
+        setPreviousPath(selectedPath);
+        setSelectedPath((prevSelectedPath) => (prevSelectedPath + 1) % 3);
+      };
+  
+      interval = setInterval(cyclePaths, delay);
+      
+      if (delay === 11000) {
+        setDelay(5500);
+      }
+  
+      return () => clearInterval(interval);
+    }, [interrupt, selectedPath]);
+  
+    const handleButtonClick = (path) => {
+      setInterrupt(true);
+      setDelay(11000);
+  
+      setPreviousPath(selectedPath);
+      setSelectedPath(path);
+    };
+  
     return (
       <div className="section-4">
         <div className="section-4-content">
           <p className="section-text title left-margin">Paths</p>
-          <p className="section-text main left-margin">texts</p>
+          <div className="path-buttons left-margin">
+            <button
+              className={`path-button path-colour-0 ${selectedPath === 0 ? "selected" : ""}`}
+              onClick={() => handleButtonClick(0)}
+            >
+              <span className="section-text main bold">Distance</span>
+            </button>
+            <button
+              className={`path-button path-colour-1 ${selectedPath === 1 ? "selected" : ""}`}
+              onClick={() => handleButtonClick(1)}
+            >
+              <span className="section-text main bold">Risk</span>
+            </button>
+            <button
+              className={`path-button path-colour-2 ${selectedPath === 2 ? "selected" : ""}`}
+              onClick={() => handleButtonClick(2)}
+            >
+              <span className="section-text main bold">Combined</span>
+            </button>
+          </div>
           <div className="section-4-graph-1">
-            <GraphOne />
+            <GraphOneAnimated selectedPath={selectedPath} previousPath={previousPath} />
           </div>
           <div className="section-4-graph-2">
-            <GraphTwo />
+            <GraphTwo selectedPath={selectedPath} previousPath={previousPath} />
           </div>
         </div>
       </div>
     );
-  }
+  };
+  
   return (
     <>
     <SectionOne />
