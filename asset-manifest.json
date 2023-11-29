@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/coursework-poster/static/css/main.86b75720.css",
-    "main.js": "/coursework-poster/static/js/main.c9a24519.js",
+    "main.js": "/coursework-poster/static/js/main.d23800aa.js",
     "static/js/787.b8813487.chunk.js": "/coursework-poster/static/js/787.b8813487.chunk.js",
-    "static/media/qr-code.svg": "/coursework-poster/static/media/qr-code.2f470a68a0f402416964e334af33c4e7.svg",
+    "static/media/qr-code.svg": "/coursework-poster/static/media/qr-code.2c7e62e674de0bcefe0c346e45e1a706.svg",
     "static/media/map-svgrepo-com.svg": "/coursework-poster/static/media/map-svgrepo-com.6db420690e0c125cda93e8d270d134c3.svg",
     "static/media/target-svgrepo-com.svg": "/coursework-poster/static/media/target-svgrepo-com.258d039cbdbc5208cf389cc4642acb21.svg",
     "static/media/path-location-svgrepo-com.svg": "/coursework-poster/static/media/path-location-svgrepo-com.026ced04edb159cd812e364c818a79c6.svg",
@@ -14,11 +14,11 @@
     "static/media/rotate-svgrepo-com.svg": "/coursework-poster/static/media/rotate-svgrepo-com.db4adf685625c07b02735e29c69b0353.svg",
     "index.html": "/coursework-poster/index.html",
     "main.86b75720.css.map": "/coursework-poster/static/css/main.86b75720.css.map",
-    "main.c9a24519.js.map": "/coursework-poster/static/js/main.c9a24519.js.map",
+    "main.d23800aa.js.map": "/coursework-poster/static/js/main.d23800aa.js.map",
     "787.b8813487.chunk.js.map": "/coursework-poster/static/js/787.b8813487.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.86b75720.css",
-    "static/js/main.c9a24519.js"
+    "static/js/main.d23800aa.js"
   ]
 }
